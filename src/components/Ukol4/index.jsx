@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 // Zadání 1: Vytvořte stavy pro login a heslo a propojte je obousměrně s příslušnými inputy ve formuláři.
 
-// Zadání 2: Po kliknutí na tlačítko `Přihlásit` vypište do konzole objekt se dvěma vlastnostmi: `login` a `password`, které budou obsahovat aktuální hodnoty z inputů.
+// Zadání 2: Na formulář pověstě obsluhu události `onSubmit`. Nezapomeňte na `e.preventDefault`. Po odeslání formuláře vypište do konzole objekt se dvěma vlastnostmi: `login` a `password`, které budou obsahovat aktuální hodnoty z inputů.
 
 // Zadání 3: Vytvořte si stav `error`, bude obsahovat zprávu pro uživatele, pokud něco vyplní špatně. Na začátku bude mít prázdnou hodnotu prázdný řetězec. Zobrazte obsah tohoto stavu v prvku `.alert`.
 
@@ -30,7 +30,7 @@ export const Ukol4 = () => {
             <input type="password" />
           </label>
         </div>
-        <button>Přihlásit</button>
+        <button type="submit">Přihlásit</button>
       </form>
     </>
   );
