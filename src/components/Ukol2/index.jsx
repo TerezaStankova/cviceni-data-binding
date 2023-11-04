@@ -7,7 +7,6 @@ export const Ukol2 = () => {
 
   return (
     <>
-      <h1>Úkol 2</h1>
       <label>
         Login:
         <input type="text" />

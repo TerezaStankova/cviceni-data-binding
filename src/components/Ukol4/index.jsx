@@ -15,7 +15,6 @@ import { useState } from 'react';
 export const Ukol4 = () => {
   return (
     <>
-      <h1>Úkol 4</h1>
       <div className="alert"></div>
       <form>
         <div className="field">

@@ -9,7 +9,6 @@ export const Ukol3 = () => {
 
   return (
     <>
-      <h1>Úkol 3</h1>
       <label>
         Login:
         <input type="text" />
