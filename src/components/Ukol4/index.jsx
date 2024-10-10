@@ -18,6 +18,14 @@ Zadání 6: Pokud uživatel správně vyplnil obě pole, do stavu `error` nastav
 */
 
 export const Ukol4 = () => {
+    const [login, setLogin] = useState('petr');
+    const [pwd, setPwd] = useState('');
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+        console.log({login: login, pwd: pwd})
+    }
+
   return (
     <>
       <div className="error"></div>
@@ -25,16 +33,16 @@ export const Ukol4 = () => {
         <div className="field">
           <label>
             Login:
-            <input type="text" />
+        <input onChange={event => setLogin(event.target.value)} value={login} type="text" />
           </label>
         </div>
         <div className="field">
           <label>
-            Heslo:
-            <input type="password" />
+                      Heslo:
+                      <input onChange={event => setPwd(event.target.value)} value={pwd} type="password" />
           </label>
         </div>
-        <button type="submit">Přihlásit</button>
+              <button onClick={event => onSubmit(event)} type="submit">Přihlásit</button>
       </form>
     </>
   );
